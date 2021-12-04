@@ -1,7 +1,6 @@
 const express= require('express')
 const app = express()
 const port = 3000
-const cors = require('cors')
 
 const reservas = require('./controller/reservas-controller')
 const bd = require('./infra/sqlite-db')
@@ -21,4 +20,4 @@ app.listen(port, () => {
 })
 
 
-module.exports = app,cors
+module.exports = app
